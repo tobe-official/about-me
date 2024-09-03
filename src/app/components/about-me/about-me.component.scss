@@ -1,0 +1,38 @@
+.restOfScreen{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+
+    .imgDiv{
+        width: 25%;
+        height: 70%;
+        border-radius: 12px;
+        border: 2px black solid;
+        background-color: gray;
+    }
+
+    .infoDiv{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        width: 40%;
+        height: 50%;
+        background-color: white;
+        border-radius: 12px;
+        border: 2px black solid;
+        color: rgb(10, 4, 43);
+        font-size: 25px;
+
+        p{
+            margin: 0;
+            padding: 0;
+            width: 90%;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}

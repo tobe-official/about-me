@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import {RouterLink, RouterOutlet} from '@angular/router';
 import { HeaderComponent } from "../header/header.component";
+import { FooterComponent } from "../footer/footer.component";
 
 
 @Component({
@@ -9,7 +10,8 @@ import { HeaderComponent } from "../header/header.component";
   imports: [
     RouterOutlet,
     RouterLink,
-    HeaderComponent
+    HeaderComponent,
+    FooterComponent
 ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
