@@ -26,6 +26,9 @@ COPY --chown=appgroup:appuser --from=builder /app/entrypoint.sh /app/entrypoint.
 RUN echo "${CLOUDFLARE_ORIGIN_CERTIFICATE}" > /etc/ssl/raphael-schreiber.pem
 RUN echo "${CLOUDFLARE_ORIGIN_CA_KEY}" > /etc/ssl/raphael-schreiber.key
 
+RUN mkdir -p /var/ /var/run /logs/ && \
+    chown -R appuser:appgroup /var/ /var/run/ /logs/
+
 RUN chmod +x ./entrypoint.sh
 
 USER appuser
