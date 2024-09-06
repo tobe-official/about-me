@@ -12,9 +12,15 @@ html {
         .background {
             width: 100vw;
             height: 100vh;
-            background: linear-gradient(25deg, #041186 40%, transparent 41%, transparent 59%, #041186 60%), linear-gradient(90deg, transparent 45%, #000000 45%, #000000 55%, transparent 55%, transparent 20%, #000000 20%, #000000 30%,transparent 30%), linear-gradient(90deg, #000000 9%, transparent 10%);
-            background-size: 3em 3em;
-            background-color: #041186;
+            /*
+            background-color: #000000;
+            background-image:  linear-gradient(30deg, #444cf7 12%, transparent 12.5%, transparent 87%, #444cf7 87.5%, #444cf7), linear-gradient(150deg, #444cf7 12%, transparent 12.5%, transparent 87%, #444cf7 87.5%, #444cf7), linear-gradient(30deg, #444cf7 12%, transparent 12.5%, transparent 87%, #444cf7 87.5%, #444cf7), linear-gradient(150deg, #444cf7 12%, transparent 12.5%, transparent 87%, #444cf7 87.5%, #444cf7), linear-gradient(60deg, #444cf777 25%, transparent 25.5%, transparent 75%, #444cf777 75%, #444cf777), linear-gradient(60deg, #444cf777 25%, transparent 25.5%, transparent 75%, #444cf777 75%, #444cf777);
+            background-size: 50px 35px;
+            background-position: 0 0, 0 0, 10px 18px, 10px 18px, 0 0, 10px 18px;
+*/
+            background-color: #000000;
+            background-image: linear-gradient(#444cf7 1px, transparent 1px), linear-gradient(to right, #444cf7 1px, #000000 1px);
+            background-size: 20px 20px;
             font-family: "Bahnschrift";
             position: absolute;
             z-index: 0;
@@ -39,10 +45,12 @@ html {
                     height: 50%;
                     border-radius: 12px;
                     background-color: rgb(196, 193, 193);
+                    border: 4px black solid;
 
                     .button:hover {
                         background-color: rgb(98, 96, 96);
                         color: rgb(255, 255, 255);
+                        border: 2xp black solid;
                     }
 
                     .button {
@@ -51,7 +59,7 @@ html {
                         font-weight: bold;
                         width: 20%;
                         height: 100%;
-                        border-radius: 12px;
+                        border-radius: 9px;
                         background-color: rgb(196, 193, 193);
                         color: rgb(0, 0, 0);
                         border: none;

@@ -19,10 +19,10 @@ export class BackgroundComponent {
   protected howManyCircles: number[] = [];
   private animationFrameId!: number;
   private angle = 0;
-  private radiusX = 300; // Horizontaler Radius des Ovals
-  private radiusY = 400; // Vertikaler Radius des Ovals
+  private radiusX = 600; // Horizontaler Radius des Ovals
+  private radiusY = 700; // Vertikaler Radius des Ovals
   private numDivs = 15; // Anzahl der Kreise
-  private rotationAngle = 3 * Math.PI / 4; // 45 Grad in Bogenmaß
+  private rotationAngle = 3  * Math.PI / 4; // 45 Grad in Bogenmaß
 
   constructor(private renderer: Renderer2, private elRef: ElementRef) {}
 
