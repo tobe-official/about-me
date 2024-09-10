@@ -34,7 +34,8 @@ RUN chown -R appuser:appgroup /etc/ssl/
 RUN mkdir -p /var/ /run/ /logs/ && \
     chown -R appuser:appgroup /var/ /run/ /logs/
 
+RUN chmod +x /app/entrypoint.sh
+
 USER appuser
 
-RUN chmod +x ./entrypoint.sh
 ENTRYPOINT ["./entrypoint.sh"]
