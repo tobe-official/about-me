@@ -26,8 +26,8 @@ COPY --chown=appgroup:appuser --from=builder /app/nginx.conf /etc/nginx/nginx.co
 COPY --chown=appgroup:appuser --from=builder /app/entrypoint.sh /app/entrypoint.sh
 
 # Cloudflare origin certificate
-RUN echo "$CLOUDFLARE_ORIGIN_CERTIFICATE" > /etc/ssl/easyflow.pem
-RUN echo "$CLOUDFLARE_ORIGIN_CA_KEY" > /etc/ssl/easyflow.key
+RUN echo "$CLOUDFLARE_ORIGIN_CERTIFICATE" > /etc/ssl/raphael-schreiber.pem
+RUN echo "$CLOUDFLARE_ORIGIN_CA_KEY" > /etc/ssl/raphael-schreiber.key
 RUN chown -R appuser:appgroup /etc/ssl/
 
 # Create the necessary directories with correct permissions
