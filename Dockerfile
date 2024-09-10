@@ -32,7 +32,7 @@ RUN chown -R appuser:appgroup /etc/ssl/
 
 # Create the necessary directories with correct permissions
 RUN mkdir -p /var/ /run/ /logs/ && \
-    chown -R appuser:appgroup /var/ /run/ /logs/
+    chown -R appuser:appgroup /var/ /run/ /logs/ /usr/
 
 RUN chmod +x /app/entrypoint.sh
 
