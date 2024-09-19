@@ -21,6 +21,8 @@ COPY --chown=appgroup:appuser --from=builder /app/dist/about-me/browser /usr/sha
 COPY --chown=appgroup:appuser --from=builder /app/nginx.conf /etc/nginx/nginx.conf
 COPY --chown=appgroup:appuser --from=builder /app/entrypoint.sh /app/entrypoint.sh
 
+RUN apk add nginx
+
 # Create the necessary directories with correct permissions
 RUN mkdir -p /var/ /run/ /logs/ && \
     chown -R appuser:appgroup /var/ /run/ /logs/ /usr/
