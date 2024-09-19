@@ -27,6 +27,4 @@ RUN mkdir -p /var/ /run/ /logs/ && \
 
 RUN chmod +x /app/entrypoint.sh
 
-USER appuser
-
 ENTRYPOINT ["./entrypoint.sh"]
