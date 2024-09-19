@@ -20,6 +20,7 @@ WORKDIR /app
 COPY --chown=appgroup:appuser --from=builder /app/dist/about-me/browser /usr/share/nginx/html
 COPY --chown=appgroup:appuser --from=builder /app/nginx.conf /etc/nginx/nginx.conf
 COPY --chown=appgroup:appuser --from=builder /app/entrypoint.sh /app/entrypoint.sh
+COPY --chown=appgroup:appuser --from=builder /app/package.json  /app/package.json
 
 RUN apk add nginx
 
