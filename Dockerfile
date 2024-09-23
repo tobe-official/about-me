@@ -19,16 +19,10 @@ COPY . .
 #### generate build --prod
 RUN npm run build --prod
 
-### STAGE 2: Run ###
-FROM nginxinc/nginx-unprivileged
-
-#### copy nginx conf
-COPY ./nginx.conf /etc/nginx/conf.d/default.conf
-
 #### copy artifact build from the 'build environment'
 COPY --from=build /usr/src/app/dist/about-me /usr/share/nginx/html
 
-CMD ["nginx", "-g", "daemon off;"]
+ENTRYPOINT ["nginx", "-g", "daemon off;"]
 
 
 
