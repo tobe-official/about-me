@@ -1,9 +1,13 @@
 #circleContainer {
-  position: fixed; // Sicherstellen, dass der Container immer sichtbar ist
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000000;
+  background-image: linear-gradient(#00089b 1px, transparent 1px), linear-gradient(to right, #00089b 1px, #000000 1px);
+  background-size: 20px 20px;
+  font-family: "Bahnschrift";
+  z-index: 0;
+  position: fixed;
   overflow: hidden;
-  z-index: 0; // Hintergrund
 }
 
 .circle-div {

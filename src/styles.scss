@@ -11,14 +11,7 @@ html {
         height: 100vh;
 
         .background {
-            width: 100vw;
-            height: 100vh;
-            background-color: #000000;
-            background-image: linear-gradient(#00089b 1px, transparent 1px), linear-gradient(to right, #00089b 1px, #000000 1px);
-            background-size: 20px 20px;
-            font-family: "Bahnschrift";
-            position: absolute;
-            z-index: 0;
+            
         }
 
         .wholeScreen {
