@@ -1,28 +1,30 @@
-### STAGE 1: Build ###
-FROM node:lts-alpine AS build
+# Stage 1: Build Angular app
+FROM node:20-alpine as build
 
-#### make the 'app' folder the current working directory
-WORKDIR /usr/src/app
+# Set working directory
+WORKDIR /app
 
-#### copy both 'package.json' and 'package-lock.json' (if available)
-COPY package*.json ./
-
-#### install angular cli
-RUN npm install -g @angular/cli
-
-#### install project dependencies
+# Copy package.json and install dependencies
+COPY package.json package-lock.json ./
 RUN npm install
 
-#### copy things
+# Copy the source code and build the Angular app
 COPY . .
-
-#### generate build --prod
 RUN npm run build --prod
 
-#### copy artifact build from the 'build environment'
-COPY --from=build /usr/src/app/dist/about-me /usr/share/nginx/html
+# Stage 2: Serve with NGINX
+FROM nginx:alpine
 
-ENTRYPOINT ["nginx", "-g", "daemon off;"]
+# Copy the Angular build to the NGINX html folder
+COPY --from=build /app/dist/my-angular-app /usr/share/nginx/html
+
+# Copy custom NGINX configuration for HTTPS
+COPY nginx.conf /etc/nginx/nginx.conf
+
+EXPOSE 443
+
+# Start NGINX
+CMD ["nginx", "-g", "daemon off;"]
 
 
 
