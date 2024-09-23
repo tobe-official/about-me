@@ -35,21 +35,9 @@
 
 //Phone
 @media (max-width: 450px) and (min-width: 200px) {
-    
-}
-  
-//Tablet
-@media (max-width: 1050px) and (min-width: 451px) {
-    .allButtons {
-        width: 60%;
-        height: 50%;
+    .header{
         display: flex;
-        align-items: center;
-    }
-    
-    .button {
-        font-size: 17.5px;
-        width: 20%;
-        height: 100%;
+        justify-content: left;
+        margin-left: 10%;
     }
 }

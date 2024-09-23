@@ -1,39 +1,34 @@
 <div class="header">
-    <!-- "if" condition: window width is <= 450px -->
     @if (windowWidth <= 450) {
       <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
         <mat-icon>more_vert</mat-icon>
       </button>
       
-      <mat-menu #menu="matMenu">
+      <mat-menu #menu="matMenu" class="phone">
         <button mat-menu-item>
-          <mat-icon>dialpad</mat-icon>
-          <span>Redial</span>
-        </button>
-        <button mat-menu-item disabled>
-          <mat-icon>voicemail</mat-icon>
-          <span>Check voice mail</span>
+          <mat-icon>home</mat-icon>
+          <span>Home</span>
         </button>
         <button mat-menu-item>
-          <mat-icon>notifications_off</mat-icon>
-          <span>Disable alerts</span>
+          <mat-icon>person</mat-icon>
+          <span>About Me</span>
+        </button>
+        <button mat-menu-item>
+          <mat-icon>devices</mat-icon>
+          <span>Projects</span>
+        </button>
+        <button mat-menu-item>
+            <mat-icon>devices</mat-icon>
+            <span>Projects</span>
+        </button>
+        <button mat-menu-item>
+            <mat-icon>telephone</mat-icon>
+            <span>Contact</span>
         </button>
       </mat-menu>
     }
-  
-    <!-- "else if" condition: window width is between 451px and 1050px -->
-    @else if (windowWidth > 450 && windowWidth <= 1050) {
-      <div class="allButtons">
-        <button class="button" routerLink="/home">Home</button>
-        <button class="button" routerLink="/about-me">About Me</button>
-        <button class="button" routerLink="/projects">Projects</button>
-        <button class="button" routerLink="/">//Hie no öppis finde</button>
-        <button class="button" routerLink="/contact">Contact</button>
-      </div>
-    }
-  
-    <!-- "else" condition: window width is > 1050px -->
-    @else {
+
+    @else if(windowWidth >= 1051){
       <div class="allButtons">
         <button class="button" routerLink="/home">Home</button>
         <button class="button" routerLink="/about-me">About Me</button>

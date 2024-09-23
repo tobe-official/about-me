@@ -35,5 +35,19 @@ html {
     }
 }
 
+@media (max-width: 450px) and (min-width: 200px){
+    .wholeScreen{
+        overflow-x: hidden;
+    }
+    .restOfScreen{
+        display: flex;
+        align-items: start;
+    }
+}
+
+@media (max-width: 1050px) and (min-width: 451px) {
+
+}
+
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
