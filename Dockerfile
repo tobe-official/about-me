@@ -66,4 +66,4 @@ RUN chmod +x /app/entrypoint.sh
 
 CMD ["nginx", "-g", "deamon off;"]
 
-ENTRYPOINT ["./entrypoint.sh"]
+#ENTRYPOINT ["./entrypoint.sh"]
