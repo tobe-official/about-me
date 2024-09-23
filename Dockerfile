@@ -17,10 +17,10 @@ RUN adduser -DH -s /sbin/nologin -u 2000 -G appgroup -S appuser
 WORKDIR /app
 
 # Copy needed files
-COPY --chown=appgroup:appuser --from=builder /app/dist/about-me/browser /usr/share/nginx/html
-COPY --chown=appgroup:appuser --from=builder /app/nginx.conf /etc/nginx/nginx.conf
-COPY --chown=appgroup:appuser --from=builder /app/entrypoint.sh /app/entrypoint.sh
-COPY --chown=appgroup:appuser --from=builder /app/package.json  /app/package.json
+COPY --chown=appgroup:appuser --from=production /app/dist/about-me/browser /usr/share/nginx/html
+COPY --chown=appgroup:appuser --from=production /app/nginx.conf /etc/nginx/nginx.conf
+COPY --chown=appgroup:appuser --from=production /app/entrypoint.sh /app/entrypoint.sh
+COPY --chown=appgroup:appuser --from=production /app/package.json  /app/package.json
 
 RUN apk add nginx
 
