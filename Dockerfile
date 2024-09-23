@@ -16,7 +16,7 @@ RUN npm run build --prod
 FROM nginx:alpine
 
 # Copy the Angular build to the NGINX html folder
-COPY --from=build /app/dist/my-angular-app /usr/share/nginx/html
+COPY --from=build /app/dist/about-me /usr/share/nginx/html
 
 # Copy custom NGINX configuration for HTTPS
 COPY nginx.conf /etc/nginx/nginx.conf
