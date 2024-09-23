@@ -2,11 +2,12 @@ FROM node:20-alpine AS builder
 
 WORKDIR /app
 
+RUN npm install -g @angular/cli
+
 COPY . .
 
 RUN npm ci
 
-RUN npm install -g @angular/cli && ng build
 RUN npm run build --prod
 
 
