@@ -5,24 +5,19 @@
       </button>
       
       <mat-menu #menu="matMenu" class="phone">
-        <button mat-menu-item>
-          <mat-icon>home</mat-icon>
+        <button mat-menu-item routerLink="/home">
           <span>Home</span>
         </button>
-        <button mat-menu-item>
-          <mat-icon>person</mat-icon>
+        <button mat-menu-item routerLink="/about-me">
           <span>About Me</span>
         </button>
-        <button mat-menu-item>
-          <mat-icon>devices</mat-icon>
+        <button mat-menu-item routerLink="/projects">
           <span>Projects</span>
         </button>
-        <button mat-menu-item>
-            <mat-icon>devices</mat-icon>
+        <button mat-menu-item routerLink="/">
             <span>Projects</span>
         </button>
-        <button mat-menu-item>
-            <mat-icon>telephone</mat-icon>
+        <button mat-menu-item routerLink="/contact">
             <span>Contact</span>
         </button>
       </mat-menu>
