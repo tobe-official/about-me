@@ -9,25 +9,25 @@ RUN npm ci
 RUN npm run build --prod
 
 
-FROM nginx:alpine AS application
-
-ARG CLOUDFLARE_ORIGIN_CERTIFICATE
-ARG CLOUDFLARE_ORIGIN_CA_KEY
+FROM node:20-alpine AS production
 
 RUN addgroup -g 2000 -S appgroup
 RUN adduser -DH -s /sbin/nologin -u 2000 -G appgroup -S appuser
 
 WORKDIR /app
 
+# Copy needed files
 COPY --chown=appgroup:appuser --from=builder /app/dist/about-me/browser /usr/share/nginx/html
 COPY --chown=appgroup:appuser --from=builder /app/nginx.conf /etc/nginx/nginx.conf
 COPY --chown=appgroup:appuser --from=builder /app/entrypoint.sh /app/entrypoint.sh
+COPY --chown=appgroup:appuser --from=builder /app/package.json  /app/package.json
 
-RUN echo "${CLOUDFLARE_ORIGIN_CERTIFICATE}" > /etc/ssl/raphael-schreiber.pem
-RUN echo "${CLOUDFLARE_ORIGIN_CA_KEY}" > /etc/ssl/raphael-schreiber.key
+RUN apk add nginx
 
-RUN chmod +x ./entrypoint.sh
+# Create the necessary directories with correct permissions
+RUN mkdir -p /var/ /run/ /logs/ && \
+    chown -R appuser:appgroup /var/ /run/ /logs/ /usr/
 
-USER appuser
+RUN chmod +x /app/entrypoint.sh
 
-ENTRYPOINT [ "./entrypoint.sh" ]
+ENTRYPOINT ["./entrypoint.sh"]
