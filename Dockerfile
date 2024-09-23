@@ -1,5 +1,5 @@
 # Stage 1: Build Angular app
-FROM node:20-alpine as build
+FROM node:20-alpine AS build
 
 # Set working directory
 WORKDIR /app
@@ -21,9 +21,10 @@ COPY --from=build /app/dist/my-angular-app /usr/share/nginx/html
 # Copy custom NGINX configuration for HTTPS
 COPY nginx.conf /etc/nginx/nginx.conf
 
+# Expose port 443 for HTTPS
 EXPOSE 443
 
-# Start NGINX
+# Ensure NGINX is running in the foreground
 CMD ["nginx", "-g", "daemon off;"]
 
 
