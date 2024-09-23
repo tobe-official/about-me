@@ -6,7 +6,7 @@ COPY . .
 
 RUN npm ci
 
-RUN npm run --prod
+RUN npm run build --prod
 
 
 FROM node:20-alpine AS production
