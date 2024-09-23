@@ -3,6 +3,7 @@ import { RouterLink, RouterOutlet } from '@angular/router';
 import { HeaderComponent } from "../header/header.component";
 import { FooterComponent } from "../footer/footer.component";
 import { BackgroundComponent } from '../background/background.component';
+import {NgOptimizedImage} from "@angular/common";
 
 @Component({
   selector: 'app-about-me',
@@ -12,8 +13,9 @@ import { BackgroundComponent } from '../background/background.component';
     RouterOutlet,
     RouterLink,
     HeaderComponent,
-    FooterComponent
-],
+    FooterComponent,
+    NgOptimizedImage
+  ],
   templateUrl: './about-me.component.html',
   styleUrl: './about-me.component.scss'
 })
