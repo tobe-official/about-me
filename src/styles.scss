@@ -12,14 +12,8 @@ html {
         .background {
             width: 100vw;
             height: 100vh;
-            /*
             background-color: #000000;
-            background-image:  linear-gradient(30deg, #444cf7 12%, transparent 12.5%, transparent 87%, #444cf7 87.5%, #444cf7), linear-gradient(150deg, #444cf7 12%, transparent 12.5%, transparent 87%, #444cf7 87.5%, #444cf7), linear-gradient(30deg, #444cf7 12%, transparent 12.5%, transparent 87%, #444cf7 87.5%, #444cf7), linear-gradient(150deg, #444cf7 12%, transparent 12.5%, transparent 87%, #444cf7 87.5%, #444cf7), linear-gradient(60deg, #444cf777 25%, transparent 25.5%, transparent 75%, #444cf777 75%, #444cf777), linear-gradient(60deg, #444cf777 25%, transparent 25.5%, transparent 75%, #444cf777 75%, #444cf777);
-            background-size: 50px 35px;
-            background-position: 0 0, 0 0, 10px 18px, 10px 18px, 0 0, 10px 18px;
-*/
-            background-color: #000000;
-            background-image: linear-gradient(#444cf7 1px, transparent 1px), linear-gradient(to right, #444cf7 1px, #000000 1px);
+            background-image: linear-gradient(#00089b 1px, transparent 1px), linear-gradient(to right, #00089b 1px, #000000 1px);
             background-size: 20px 20px;
             font-family: "Bahnschrift";
             position: absolute;
@@ -32,40 +26,6 @@ html {
             font-family: "Bahnschrift";
             position: relative;
             z-index: 1;
-
-            .header {
-                width: 100%;
-                height: 10%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-
-                .allButtons {
-                    width: 60%;
-                    height: 50%;
-                    border-radius: 12px;
-                    background-color: rgb(196, 193, 193);
-                    border: 4px black solid;
-
-                    .button:hover {
-                        background-color: rgb(98, 96, 96);
-                        color: rgb(255, 255, 255);
-                        border: 2xp black solid;
-                    }
-
-                    .button {
-                        font-family: "Bahnschrift";
-                        font-size: 17.5px;
-                        font-weight: bold;
-                        width: 20%;
-                        height: 100%;
-                        border-radius: 9px;
-                        background-color: rgb(196, 193, 193);
-                        color: rgb(0, 0, 0);
-                        border: none;
-                    }
-                }
-            }
             
             .restOfScreen {
                 height: 90%;
@@ -74,3 +34,6 @@ html {
         }
     }
 }
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

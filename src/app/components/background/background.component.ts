@@ -32,7 +32,16 @@ export class BackgroundComponent {
   }
 
   startAnimationLoop(): void {
-    const speed = 0.003; // Geschwindigkeit der Animation
+    const speed = 0.002;
+
+    if(window.innerWidth <= 450 && window.innerWidth >= 200){
+      this.radiusX = 150;
+      this.radiusY = 250;
+    } else if(window.innerWidth <= 1050 && window.innerWidth >= 451){
+      this.radiusX = 450;
+      this.radiusY = 550;
+    }
+
 
     const animate = () => {
       this.angle += speed;
