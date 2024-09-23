@@ -64,6 +64,6 @@ RUN mkdir -p /var/ /run/ /logs/ && \
 
 RUN chmod +x /app/entrypoint.sh
 
-CMD ["nginx", "-g", "deamon off;"]
+CMD ["nginx", "-g", "daemon off;"]
 
 #ENTRYPOINT ["./entrypoint.sh"]
