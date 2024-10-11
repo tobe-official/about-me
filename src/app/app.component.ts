@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { BackgroundComponent } from "./components/background/background.component";
+import { BackgroundComponent } from "./components/global/background/background.component";
+import { TranslateService } from '@ngx-translate/core';
+import { environment } from './environment/environment';
 
 @Component({
   selector: 'app-root',
@@ -11,4 +13,12 @@ import { BackgroundComponent } from "./components/background/background.componen
 })
 export class AppComponent {
   title = 'about-me';
+  constructor(private translateService: TranslateService) {}
+  ngOnInit(): void {
+    this.translateService.addLangs(environment.langauges);
+    this.setLanguage('de')
+  }
+  setLanguage(lang: string): void {
+    this.translateService.use(lang);
+  }
 }

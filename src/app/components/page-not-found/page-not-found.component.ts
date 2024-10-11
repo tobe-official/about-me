@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import {RouterLink, RouterOutlet} from '@angular/router';
-import { HeaderComponent } from "../header/header.component";
-import { BackgroundComponent } from '../background/background.component';
+import { HeaderComponent } from "../global/header/header.component";
+import { BackgroundComponent } from '../global/background/background.component';
 
 
 @Component({
