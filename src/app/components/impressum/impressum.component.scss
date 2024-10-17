@@ -1,15 +1,15 @@
 .restOfScreen {
   display: flex;
   justify-content: center;
-  align-items: center;
-  margin: 0 auto; /* Zentriert den Inhalt */
-  padding-top: 100px; /* Fügt einen Abstand von 100px zum oberen Rand hinzu */
-  overflow-y: scroll;
-  overflow-x: hidden;
+  align-items: start;
+  margin: 0 auto;
 }
 
-div {
-  width: 90%;
-  background-color: transparent;
+.impressumDiv {
+  width: 80%;
+  background-color: rgba(0, 0, 0, 0.43);
   text-align: center;
+  color: white;
+  border-radius: 50px;
+  padding: 10px;
 }

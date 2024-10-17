@@ -26,9 +26,7 @@ export class HeaderComponent implements OnInit{
   windowWidth: number = 0;
 
   ngOnInit(): void {
-    // Initialize window width
     this.windowWidth = window.innerWidth;
-    console.log(window.innerWidth)
   }
 
   constructor(private router: Router, private language: AppComponent){
@@ -41,6 +39,7 @@ export class HeaderComponent implements OnInit{
 
   protected changeLanguage(language: string): void {
     this.language.setLanguage(language);
+    localStorage.setItem("language", language);
   }
 
   protected readonly Environment = environment;

@@ -3,9 +3,48 @@
   "aboutMe": "About Me",
   "projects": "Projects",
   "skills": "Skills",
-  "contact": "Contact",
+  "contact1": "Contact",
   "job": "Software Developer",
   "firstOfAboutMe": "Hello my name is Raphaël Schreiber and I do a apprenticeship at SBB as an Software Developer.",
   "secondOfAboutMe": "I love working on Frontend Projects but I can programm a Fullstack-Application. I especially like UX-Design, UI-Design, and the whole Frontend.",
-  "thirdOfAboutMe": "I am currently working in a mobile development team."
+  "thirdOfAboutMe": "I am currently working in a mobile development team.",
+  "impressum": "Imprint",
+  "contact": {
+    "name": "Raphaël Schreiber",
+    "address": "Lorrainestrasse 1",
+    "zip": "03014 Bern",
+    "phone": "Phone: +41 79 214 53 57",
+    "email": "rsc146273@stud.gibb.ch"
+  },
+  "disclaimer": {
+    "title": "Disclaimer - Legal Notice",
+    "inquiry_right": {
+      "title": "Right to Information and Withdrawal",
+      "content": "You have the right to request information about the data collected about you at any time free of charge and without delay. You may also withdraw your consent to the use of your personal data with effect for the future. To do so, please contact the service provider named in the imprint."
+    },
+    "privacy": {
+      "title": "Data Protection (General)",
+      "content": "When accessing our website, general information (so-called server log files) is automatically collected. This includes the web browser you are using, your operating system, and your Internet service provider. This data does not allow any conclusions to be drawn about your person and is statistically evaluated by us to improve the technical and content aspects of our website. The collection of this information is necessary to deliver the content of the website correctly."
+    },
+    "privacy_2": "The use of the website is generally possible without providing personal data. As far as personal data (e.g., name, address, or e-mail addresses) is collected, this is done voluntarily wherever possible. This data will not be passed on to third parties without your express consent.",
+    "privacy_3": "If a contractual relationship is to be established, structured, or changed, or if you send us an inquiry, we will collect and use personal data from you to the extent necessary for this purpose (inventory data). We collect, process, and use personal data insofar as it is necessary to enable you to use the web offering (usage data).",
+    "privacy_4": "All personal data will only be stored as long as it is necessary for the stated purpose (processing your inquiry or handling a contract). We take tax and commercial law retention periods into account during this process.",
+    "privacy_5": "Upon request from the competent authorities, we may be required to disclose this data (inventory data) on a case-by-case basis, as far as necessary for criminal prosecution, to prevent danger, to fulfill the legal tasks of the constitutional protection authorities, the military counterintelligence service, or to enforce intellectual property rights."
+  },
+  "liability": {
+    "title": "Disclaimer (Liability)",
+    "liability_content1": {
+      "title": "1. Liability for Content",
+      "content": "As a service provider, we are responsible for our content on these pages in accordance with general laws under § 7 Abs. 1 TMG. However, according to §§ 8 to 10 TMG, we are not obligated as a service provider to monitor transmitted or stored third-party information or to search for circumstances indicating illegal activity. Obligations to remove or block the use of information under general laws remain unaffected by this. Liability in this regard is only possible from the time of knowledge of a specific legal violation. If we become aware of any such legal violations, we will remove the content immediately."
+    },
+    "liability_content2": {
+      "title": "2. Liability for Links",
+      "content": "This website contains links to external third-party websites, the contents of which we have no influence over. Therefore, we cannot assume any liability for these external contents. The respective provider or operator of the pages is always responsible for the contents of the linked pages. The linked pages were checked for possible legal violations at the time of linking. Illegal contents were not recognizable at the time of linking. However, permanent content control of the linked pages is not reasonable without concrete evidence of a legal violation. If we become aware of any legal violations, we will remove such links immediately."
+    }
+  },
+  "copyright": {
+    "title": "3. Copyright",
+    "content": "The content and works created by the service providers, their employees, and third parties commissioned by them on these pages are subject to German copyright law. The reproduction, editing, distribution, and any kind of use outside the limits of copyright law require the prior written consent of the respective author or creator. Downloads and copies of these pages are only permitted for private, non-commercial use. Where content on this site has not been created by the operator, third-party copyrights are respected. In particular, third-party content is marked as such. If you become aware of a copyright infringement, please inform us. If we become aware of any legal violations, we will remove such content immediately."
+  },
+  "generated": "This imprint was created with the help of the imprint generator by HENSCHE Rechtsanwälte, law firm for labor law."
 }

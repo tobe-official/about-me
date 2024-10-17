@@ -1,45 +1,42 @@
-.restOfScreen{
+.restOfScreen {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+
+  .imgDiv {
+    width: 25%;
+    height: 70%;
+    border-radius: 12px;
+    border: 2px solid black;
+    background-color: rgba(0, 0, 0, 0.43);
+
+    #portrait {
+      width: 100%;
+      height: 100%;
+      border-radius: 12px;
+      box-sizing: border-box;
+    }
+  }
+
+  .infoDiv {
     display: flex;
-    justify-content: space-around;
     align-items: center;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    height: 50%;
+    background-color: rgba(0, 0, 0, 0.43);
+    border-radius: 12px;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
 
-    .imgDiv{
-        width: 25%;
-        height: 70%;
-        border-radius: 12px;
-        border: 4px black solid;
-        background-color: gray;
-
-        #portriat{
-            width: 100%;
-            height: 100%;
-            border-radius: 12px;
-            box-sizing: border-box;
-        }
+    p {
+      margin: 0;
+      padding: 0;
+      width: 90%;
+      height: auto;
+      text-align: center;
     }
-
-    .infoDiv{
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        justify-content: center;
-        width: 50%;
-        height: 50%;
-        background-color: rgb(29, 29, 29);
-        border-radius: 12px;
-        border: 2px black solid;
-        color: rgb(255, 255, 255);
-        font-size: 25px;
-
-        p{
-            margin: 0;
-            padding: 0;
-            width: 90%;
-            height: auto;
-            display: flex;
-            justify-content: start;
-            align-items: center;
-        }
-    }
+  }
 }
