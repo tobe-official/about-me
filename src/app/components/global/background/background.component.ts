@@ -3,6 +3,7 @@ import { Renderer2 } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { HeaderComponent } from '../header/header.component';
 import { FooterComponent } from '../footer/footer.component';
+import {NgOptimizedImage} from "@angular/common";
 
 @Component({
   selector: 'app-background',
@@ -10,8 +11,9 @@ import { FooterComponent } from '../footer/footer.component';
   imports: [
     RouterLink,
     HeaderComponent,
-    FooterComponent
-],
+    FooterComponent,
+    NgOptimizedImage
+  ],
   templateUrl: './background.component.html',
   styleUrl: './background.component.scss'
 })
@@ -69,4 +71,6 @@ export class BackgroundComponent {
   ngOnDestroy(): void {
     cancelAnimationFrame(this.animationFrameId);
   }
+
+  protected readonly window = window;
 }

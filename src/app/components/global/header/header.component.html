@@ -1,48 +1,45 @@
 <div class="header">
-  <!-- Central buttons for desktop -->
-  @if (windowWidth >= 1051) {
-    <div class="allButtons">
-      <button class="button" routerLink="/home">{{ "home" | translate }}</button>
-      <button class="button" routerLink="/about-me">{{ "aboutMe" | translate }}</button>
-      <button class="button" routerLink="/projects">{{ "projects" | translate }}</button>
-      <button class="button" routerLink="/..."> //Hie no öppis finde </button>
-      <button class="button" routerLink="/contact">{{ "contact" | translate }}</button>
-    </div>
-    <!-- Translator button on the top right -->
-    <button mat-icon-button [matMenuTriggerFor]="menu" class="translator" aria-label="Language selector">
-      <mat-icon class="icon">g_translate</mat-icon>
-    </button>
-    <mat-menu #menu="matMenu">
-      @for (currentLanguage of Environment.langauges; track $index) {
-        <button mat-menu-item (click)="changeLanguage(currentLanguage)">
-          {{ currentLanguage }}
-        </button>
-      }
-    </mat-menu>
-  }
+  <!-- Desktop view: Buttons centered, Translator on the right -->
+  <div class="allButtons">
+    <button class="button" routerLink="/home">{{ "home" | translate }}</button>
+    <button class="button" routerLink="/about-me">{{ "aboutMe" | translate }}</button>
+    <button class="button" routerLink="/projects">{{ "projects" | translate }}</button>
+    <button class="button" routerLink="/skills">{{ "skills" | translate }}</button>
+    <button class="button" routerLink="/contact">{{ "contact" | translate }}</button>
+  </div>
+
+  <!-- Translator button, visible in both mobile and desktop -->
+  <button mat-icon-button [matMenuTriggerFor]="menu" class="translator" aria-label="Language selector">
+    <mat-icon class="icon">g_translate</mat-icon>
+  </button>
+  <mat-menu #menu="matMenu">
+    @for (currentLanguage of Environment.langauges; track $index) {
+      <button mat-menu-item (click)="changeLanguage(currentLanguage)">
+        {{ currentLanguage }}
+      </button>
+    }
+  </mat-menu>
 
   <!-- Mobile view: Menu icon on the left side -->
-  @if (windowWidth <= 450) {
-    <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
-      <mat-icon>more_vert</mat-icon>
+  <button mat-icon-button [matMenuTriggerFor]="menuIcon" class="menuIcon" aria-label="Menu Button">
+    <mat-icon class="menuIcon">more_vert</mat-icon>
+  </button>
+
+  <mat-menu #menuIcon="matMenu" class="phone">
+    <button mat-menu-item routerLink="/home">
+      <span>{{ "home" | translate }}</span>
     </button>
-    
-    <mat-menu #menu="matMenu" class="phone">
-      <button mat-menu-item routerLink="/home">
-        <span>Home</span>
-      </button>
-      <button mat-menu-item routerLink="/about-me">
-        <span>About Me</span>
-      </button>
-      <button mat-menu-item routerLink="/projects">
-        <span>Projects</span>
-      </button>
-      <button mat-menu-item routerLink="/">
-        <span>Projects</span>
-      </button>
-      <button mat-menu-item routerLink="/contact">
-        <span>Contact</span>
-      </button>
-    </mat-menu>
-  }
+    <button mat-menu-item routerLink="/about-me">
+      <span>{{ "aboutMe" | translate }}</span>
+    </button>
+    <button mat-menu-item routerLink="/projects">
+      <span>{{ "projects" | translate }}</span>
+    </button>
+    <button mat-menu-item routerLink="/skills">
+      <span>{{ "skills" | translate }}</span>
+    </button>
+    <button mat-menu-item routerLink="/contact">
+      <span>{{ "contact" | translate }}</span>
+    </button>
+  </mat-menu>
 </div>

@@ -1,31 +1,28 @@
-.restOfScreen{
-display: flex;
-justify-content: center;
-flex-direction: column;
-align-items: center;
+.restOfScreen {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 
-    h1{
-        margin: 0;
-        padding: 0;
-        color: white;
-        height: 10%;
-        width: auto;
-    }
-    .button:hover{
-        background-color: rgb(98, 96, 96);
-        color: white;
-    }
+  h1 {
+    margin: 0;
+    padding: 0;
+    color: white;
+    height: 10%;
+    width: auto;
+  }
 
-    .button{
-        font-family: Helvetica;
-        font-size: 17.5px;
-        font-weight: bold;
-        width: 20%;
-        height: 10%;
-        border-radius: 12px;
-        background-color: rgb(196, 193, 193);
-        color: black;
-        border: none;
-        font-size: 20px;
-    }
+  .button:hover {
+  }
+
+  .button {
+    font-family: Helvetica, serif;
+    font-weight: bold;
+    width: 20%;
+    height: 10%;
+    border-radius: 12px;
+    text-decoration: underline rgb(53, 53, 253) solid;
+    border: none;
+    font-size: 20px;
+  }
 }

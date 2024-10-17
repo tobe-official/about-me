@@ -1,0 +1,15 @@
+.restOfScreen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto; /* Zentriert den Inhalt */
+  padding-top: 100px; /* Fügt einen Abstand von 100px zum oberen Rand hinzu */
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+div {
+  width: 90%;
+  background-color: transparent;
+  text-align: center;
+}

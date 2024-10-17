@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import {RouterLink, RouterOutlet} from '@angular/router';
 import { HeaderComponent } from "../global/header/header.component";
 import { BackgroundComponent } from '../global/background/background.component';
+import {MatButton} from "@angular/material/button";
 
 
 @Component({
@@ -11,8 +12,9 @@ import { BackgroundComponent } from '../global/background/background.component';
     BackgroundComponent,
     RouterOutlet,
     RouterLink,
-    HeaderComponent
-],
+    HeaderComponent,
+    MatButton
+  ],
   templateUrl: './page-not-found.component.html',
   styleUrl: './page-not-found.component.scss'
 })

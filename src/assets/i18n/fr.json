@@ -1,10 +1,11 @@
 {
-    "home": "Home",
-    "aboutMe": "Sur moi",
-    "projects": "Projet",
-    "contact": "Contact",
-    "job": "Developeur d'applications",
-    "firstOfAboutMe": "Bonjour, je m'appelle Raphaël Schreiber et je fais un apprentissage aux CFF en tant que développeur de software.",
-    "secondOfAboutMe": "J'aime travailler sur des projets Frontend mais je peux aussi programmer une application Fullstack. J'aime particulièrement l'UX-Design, l'UI-Design, et l'ensemble du Frontend.",
-    "thirdOfAboutMe": "Je travaille actuellement dans une équipe de développement mobile."
+  "home": "Home",
+  "aboutMe": "Sur moi",
+  "projects": "Projet",
+  "skills": "Compétences",
+  "contact": "Contact",
+  "job": "Developeur",
+  "firstOfAboutMe": "Bonjour, je m'appelle Raphaël Schreiber et je fais un apprentissage aux CFF en tant que développeur de software.",
+  "secondOfAboutMe": "J'aime travailler sur des projets Frontend mais je peux aussi programmer une application Fullstack. J'aime particulièrement l'UX-Design, l'UI-Design, et l'ensemble du Frontend.",
+  "thirdOfAboutMe": "Je travaille actuellement dans une équipe de développement mobile."
 }

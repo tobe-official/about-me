@@ -1,10 +1,11 @@
 {
-    "home": "Home",
-    "aboutMe": "Über mich",
-    "projects": "Projekte",
-    "contact": "Kontakt",
-    "job": "Informatiker Applikationsentwickler",
-    "firstOfAboutMe": "Hallo, mein Name ist Raphaël Schreiber und ich mache eine Lehre als Informatiker bei der SBB.",
-    "secondOfAboutMe": "Ich mag es an Frontend-Projekte zu arbeiten. Ich programmiere auch Fullstack-Projekte. Ich habe besonders UX- und UI-Design gerne",
-    "thirdOfAboutMe": "Ich arbeite aktuell in einem mobile development team."
+  "home": "Home",
+  "aboutMe": "Über mich",
+  "projects": "Projekte",
+  "skills": "Kenntnisse",
+  "contact": "Kontakt",
+  "job": "Informatiker",
+  "firstOfAboutMe": "Hallo, mein Name ist Raphaël Schreiber und ich mache eine Lehre als Informatiker bei der SBB.",
+  "secondOfAboutMe": "Ich mag es an Frontend-Projekte zu arbeiten. Ich programmiere auch Fullstack-Projekte. Ich habe besonders UX- und UI-Design gerne",
+  "thirdOfAboutMe": "Ich arbeite aktuell in einem mobile development team."
 }

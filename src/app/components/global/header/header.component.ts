@@ -5,6 +5,7 @@ import {Router, RouterLink} from "@angular/router";
 import { environment } from '../../../environment/environment';
 import {TranslateModule} from "@ngx-translate/core";
 import {AppComponent} from "../../../app.component";
+import {MatIconButton} from "@angular/material/button";
 
 
 
@@ -15,7 +16,8 @@ import {AppComponent} from "../../../app.component";
     MatIconModule,
     RouterLink,
     MatMenuModule,
-    TranslateModule
+    TranslateModule,
+    MatIconButton
   ],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'
@@ -26,6 +28,7 @@ export class HeaderComponent implements OnInit{
   ngOnInit(): void {
     // Initialize window width
     this.windowWidth = window.innerWidth;
+    console.log(window.innerWidth)
   }
 
   constructor(private router: Router, private language: AppComponent){

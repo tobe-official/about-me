@@ -1,5 +1,10 @@
-<div id="circleContainer">
+@if (window.innerWidth > 500) {
+  <div id="circleContainer">
+    <img src="assets/plain-smooth-green-wall-texture.jpg" alt="Background image" class="background-image">
     @for (item of howManyCircles; track $index) {
-        <div class="circle-div"></div>
+      <div class="circle-div"></div>
     }
-</div>
+  </div>
+} @else {
+  <img src="assets/plain-smooth-green-wall-texture.jpg" alt="Background image" class="background-image">
+}

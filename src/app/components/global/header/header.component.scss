@@ -1,64 +1,87 @@
 .header {
-    width: 100%;
-    height: 10%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative; /* To position the translator button absolutely */
-
-    .allButtons {
-        width: 60%;
-        height: 50%;
-        border-radius: 12px;
-        background-color: rgb(0, 0, 0);
-        display: flex;
-        align-items: center;
-
-        .button:hover {
-            background-color: rgb(29, 29, 29);
-        }
-
-        .button {
-            font-family: Helvetica;
-            font-size: 17.5px;
-            font-weight: bold;
-            width: 20%;
-            height: 100%;
-            border-radius: 9px;
-            background-color: rgb(0, 0, 0);
-            color: rgb(255, 255, 255);
-            border: none;
-        }
-    }
-
-    .translator {
-        position: absolute;
-        top: 25%;
-        right: 10%;
-        background-color: transparent;
-        border: none;
-        color: white;
-        padding: 10px;
-        border-radius: 50%;
-        width: 50px;
-        height: 50px;
-
-        .icon{
-            font-size: 30px;
-        }
-    }
-
-    .translator:hover {
-        background-color: rgba(255, 255, 255, 0.1);
-    }
-      
+  width: 100vw; /* Breite auf die Ansichtsfeldbreite (Viewport) beschränken */
+  max-width: 100%; /* Sicherstellen, dass der Header nicht über die Breite des Bildschirms hinausgeht */
+  height: 10%;
+  display: flex;
+  justify-content: center; /* Buttons und Icon zentriert */
+  align-items: center; /* Vertikale Zentrierung */
+  position: relative; /* Erlaubt absolute Positionierung von Elementen */
 }
 
-//Phone
-@media (max-width: 450px) and (min-width: 200px) {
-    .header {
-        display: flex;
-        justify-content: left;
-        margin-left: 10%;
-    }
+.allButtons {
+  width: 60%;
+  height: 50%;
+  border-radius: 12px;
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  align-items: center;
+
+  .button:hover {
+    background-color: rgb(29, 29, 29);
+  }
+
+  .button {
+    font-family: Helvetica, serif;
+    font-size: 17.5px;
+    font-weight: bold;
+    width: 20%;
+    height: 100%;
+    border-radius: 9px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border: none;
+  }
+}
+
+.button:hover {
+  background-color: rgb(29, 29, 29); /* Der Hover-Effekt füllt nur den Button aus */
+}
+
+.translator {
+  position: absolute;
+  top: 50%;
+  right: 2%;
+  transform: translateY(-50%);
+  background-color: transparent;
+  border: none;
+  color: black;
+  cursor: pointer;
+}
+
+.translator .icon {
+  font-size: 30px;
+}
+
+.menuIcon {
+  font-size: 30px;
+  color: white;
+  display: none;
+}
+
+/* Mobile View */
+@media (max-width: 815px) {
+  .header {
+    justify-content: space-between;
+    padding: 0 10px;
+  }
+
+  .allButtons {
+    display: none;
+  }
+
+  .menuIcon {
+    display: block;
+  }
+
+  .translator {
+    color: white;
+    margin-right: 10px;
+  }
+}
+
+/* Laptop/Desktop View */
+@media (min-width: 816px) {
+  .menuIcon {
+    display: none;
+  }
 }

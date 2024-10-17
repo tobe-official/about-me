@@ -15,7 +15,7 @@ import {TranslateModule} from "@ngx-translate/core";
     HeaderComponent,
     FooterComponent,
     BackgroundComponent,
-    TranslateModule
+    TranslateModule,
 ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
