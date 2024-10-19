@@ -38,18 +38,26 @@ export class ContactComponent {
   textOfCustomer = new FormControl("", [Validators.required]);
 
   public sendEmail(e: Event) {
-    if (this.nameOfCustomer.valid && this.emailOfCustomer.valid && this.textOfCustomer.valid && this.nameOfCustomer.value != "" && this.emailOfCustomer.value != "" && this.emailOfCustomer.value != "") {
+    if (this.nameOfCustomer.valid && this.emailOfCustomer.valid && this.textOfCustomer.valid) {
       e.preventDefault(); // Verhindert die Standard-Formularaktion
-      emailjs.sendForm('service_nt705ry', 'template_kp1qstl', e.target as HTMLFormElement, 'z_tcBe0UR1PXaeCD1')
+
+      const templateParams = {
+        nameOfCustomer: this.nameOfCustomer.value,
+        emailOfCustomer: this.emailOfCustomer.value,
+        textOfCustomer: this.textOfCustomer.value,
+      };
+
+      emailjs.send('service_nt705ry', 'template_kp1qstl', templateParams, 'z_tcBe0UR1PXaeCD1')
         .then((result: EmailJSResponseStatus) => {
-          console.log('Email sent successfully:', result.text);
+          this.nameOfCustomer.reset();
+          this.emailOfCustomer.reset();
+          this.textOfCustomer.reset();
           alert('Email sent successfully');
         }, (error) => {
-          console.error('Error sending email:', error.text);
           alert('Failed to send email');
         });
     } else {
-      alert("Please fill all the inputs correctly")
+      alert("Please fill all the inputs correctly");
     }
   }
 }
