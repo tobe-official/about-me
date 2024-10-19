@@ -1,0 +1,100 @@
+.restOfScreen{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  .formDiv{
+    margin-left: 5%;
+    height: 70%;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.53);
+    border-radius: 12px;
+
+    form{
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-content: center;
+
+      .form-control-div{
+        width: 100%;
+        height: 20%;
+        display: flex;
+        justify-content: center;
+
+        mat-form-field{
+          width: 90%;
+          height: 100%;
+        }
+      }
+      .textAreaDiv{
+        width: 100%;
+        height: 30%;
+        display: flex;
+        justify-content: center;
+
+        mat-form-field{
+          width: 90%;
+          height: 100%;
+
+          .textarea{
+            width: 100%;
+            height: 100%;
+            resize: none;
+
+            scrollbar-width: none;
+          }
+        }
+      }
+      .buttonDiv{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+
+        .button{
+          width: 90%;
+        }
+      }
+    }
+  }
+  .imageDiv{
+    margin-right: 5%;
+    width: 50%;
+    height: 70%;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.53);
+    border-radius: 12px;
+
+    #talking{
+      width: 100%;
+      height: 100%;
+      box-sizing: border-box;
+      border-radius: 12px;
+    }
+  }
+}
+@media (max-width: 450px) and (min-width: 200px) {
+  .restOfScreen {
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    align-items: center;
+
+    .imageDiv{
+      width: 90%;
+      margin: 0;
+    }
+
+    .formDiv{
+      margin-top: 5%;
+      margin-bottom: 5%;
+      margin-left: 0;
+      width: 90%;
+    }
+  }
+}

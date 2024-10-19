@@ -40,3 +40,22 @@
     }
   }
 }
+@media (max-width: 450px) and (min-width: 200px) {
+  .restOfScreen {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    .imgDiv{
+      width: 80%;
+      height: 50%;
+    }
+
+    .infoDiv{
+      margin-top: 5%;
+      height: 70% !important;
+      width: 90%;
+      margin-bottom: 5%;
+    }
+  }
+}

@@ -1,46 +1,58 @@
 html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background-color: #000000;
+
+  body {
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
-    background-color: #000000;
+    position: relative;
+    height: 100vh;
 
-    body {
-        margin: 0;
-        padding: 0;
-        position: relative;
-        height: 100vh;
+    .wholeScreen {
+      width: 100vw;
+      height: 100vh!important;
+      font-family: Helvetica, serif;
+      position: relative;
+      z-index: 1;
 
-        .wholeScreen {
-            width: 100vw;
-            height: 100vh;
-            font-family: Helvetica;
-            position: relative;
-            z-index: 1;
-            
-            .restOfScreen {
-                height: 90%;
-                width: 100%;
-            }
-        }
+      .restOfScreen {
+        height: 90%;
+        width: 100%;
+      }
     }
+  }
 }
 
-@media (max-width: 450px) and (min-width: 200px){
-    .wholeScreen{
-        overflow-x: hidden;
-    }
-    .restOfScreen{
-        display: flex;
-        align-items: start;
-    }
+@media (max-width: 450px) and (min-width: 200px) {
+  .wholeScreen {
+    overflow-x: hidden;
+  }
+  .restOfScreen {
+    display: flex;
+    align-items: start;
+  }
 }
 
 @media (max-width: 1050px) and (min-width: 451px) {
 
 }
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html, body {
+  height: 100%;
+}
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}

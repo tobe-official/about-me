@@ -1,25 +1,51 @@
 <div class="wholeScreen">
   <app-header></app-header>
   <div class="restOfScreen">
-    <form (ngSubmit)="sendEmail($event)" #contactForm="ngForm">
-      <div>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" ngModel required />
-      </div>
+    <div class="formDiv">
+      <form (ngSubmit)="sendEmail($event)" #contactForm="ngForm">
+        <div class="form-control-div">
+          <mat-form-field>
+            <mat-label>Enter your Name</mat-label>
+            <input
+              matInput
+              [formControl]="nameOfCustomer"
+              placeholder="Example Name"
+              type="text"
+              required
+            />
+          </mat-form-field>
+        </div>
 
-      <div>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" ngModel required />
-      </div>
+        <div class="form-control-div">
+          <mat-form-field>
+            <mat-label>Enter your email</mat-label>
+            <input
+              matInput
+              [formControl]="emailOfCustomer"
+              type="email"
+              pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+              placeholder="example@example.com"
+              required
+            />
+          </mat-form-field>
+        </div>
 
-      <div>
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" ngModel required></textarea>
-      </div>
+        <div class="textAreaDiv">
+          <mat-form-field>
+            <mat-label>Your Text</mat-label>
+            <textarea matInput placeholder="{{ 'placeHolder' | translate }}" required type="email"
+                      [formControl]="textOfCustomer" class="textarea"></textarea>
+          </mat-form-field>
+        </div>
+        <div class="buttonDiv">
+          <button mat-flat-button type="submit" class="button">Send</button>
+        </div>
+      </form>
+    </div>
 
-      <button type="submit" [disabled]="!contactForm.valid">Send</button>
-    </form>
-
+    <div class="imageDiv">
+      <img id="talking" src="assets/rb_43081.webp" alt="Picture of people wanting to talk">
+    </div>
   </div>
 </div>
 <app-footer></app-footer>

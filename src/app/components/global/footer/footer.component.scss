@@ -18,3 +18,8 @@ div{
         font-size: 35px;
     }
 }
+@media (max-width: 450px) and (min-width: 200px) {
+  div{
+    height: 7%;
+  }
+}
