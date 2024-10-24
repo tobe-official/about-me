@@ -1,6 +1,6 @@
 #circleContainer {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   background-color: #000000;
   font-family: Helvetica, serif;
   z-index: 0;
@@ -11,7 +11,7 @@
 .background-image {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Passt das Bild an, um es vollständig zu zeigen, ohne Verzerrung */
+  object-fit: cover;
   position: absolute;
   top: 0;
   left: 0;
