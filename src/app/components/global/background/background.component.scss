@@ -43,7 +43,7 @@
     }
 
     .background-image{
-      min-height: 120vh!important;
+      min-height: calc(100vh + 20vh)!important;
     }
   }
 }
