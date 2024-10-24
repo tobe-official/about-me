@@ -29,8 +29,10 @@ export class BackgroundComponent {
   constructor(private renderer: Renderer2, private elRef: ElementRef) {}
 
   ngOnInit(): void {
-    this.howManyCircles.length = this.numDivs;
-    this.startAnimationLoop();
+    if(window.innerWidth > 500){
+      this.howManyCircles.length = this.numDivs;
+      this.startAnimationLoop();
+    }
   }
 
   startAnimationLoop(): void {

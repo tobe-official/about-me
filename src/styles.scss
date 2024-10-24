@@ -8,6 +8,8 @@ html {
     margin: 0;
     padding: 0;
     position: relative;
+    display: flex;
+    align-content: space-between;
     height: 100vh;
 
     .wholeScreen {
@@ -15,7 +17,7 @@ html {
       height: 100vh!important;
       font-family: Helvetica, serif;
       position: relative;
-      z-index: 1;
+      z-index: 1!important;
 
       .restOfScreen {
         height: 90%;
