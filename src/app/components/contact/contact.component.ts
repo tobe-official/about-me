@@ -65,6 +65,7 @@ export class ContactComponent implements OnInit {
       alert("You have sent too many messages or you are not allowed to send messages. Please try again later");
     } else {
       if (this.nameOfCustomer.valid && this.emailOfCustomer.valid && this.textOfCustomer.valid) {
+        alert("Sending Email now. Please be patient")
         e.preventDefault();
 
         const templateParams = {
