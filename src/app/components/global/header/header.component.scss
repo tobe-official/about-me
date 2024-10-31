@@ -17,7 +17,8 @@
   align-items: center;
 
   .button:hover {
-    background-color: rgb(29, 29, 29);
+    background-color: rgba(0, 0, 0, 0.79);
+    cursor: pointer;
   }
 
   .button {

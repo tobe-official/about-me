@@ -3,6 +3,59 @@
 <div class="wholeScreen">
   <app-header></app-header>
   <div class="restOfScreen">
+    <div class="project-container">
+      <!-- Desktop Mode: Pfeile links und rechts vom Bild -->
+      @if (!isMobile) {
+        <button (click)="changeProject(false)" class="nav-button">&#9664;</button>
 
+        <div class="project-display">
+          @for (project of projects; track $index) {
+            @if ($index === currentIndex) {
+              <img
+                [src]="project.imageUrl"
+                [alt]="project.title"
+                class="project-image"
+                [class.active]="transitionClass === 'active'"
+                [class.swipe-left]="transitionClass === 'swipe-left'"
+                [class.swipe-right]="transitionClass === 'swipe-right'"
+              />
+              <div class="project-info">
+                <h2>{{ project.title }}</h2>
+                <p>{{ project.description }}</p>
+              </div>
+            }
+          }
+        </div>
+
+        <button (click)="changeProject(true)" class="nav-button">&#9654;</button>
+      }
+
+      <!-- Mobile Mode: Pfeile unter dem Bild -->
+      @if (isMobile) {
+        <div class="project-display">
+          @for (project of projects; track $index) {
+            @if ($index === currentIndex) {
+              <img
+                [src]="project.imageUrl"
+                [alt]="project.title"
+                class="project-image"
+                [class.active]="transitionClass === 'active'"
+                [class.swipe-left]="transitionClass === 'swipe-left'"
+                [class.swipe-right]="transitionClass === 'swipe-right'"
+              />
+              <div class="project-info">
+                <h2>{{ project.title }}</h2>
+                <p>{{ project.description }}</p>
+              </div>
+            }
+          }
+        </div>
+
+        <div class="nav-buttons-container">
+          <button (click)="changeProject(false)" class="nav-button">&#9664;</button>
+          <button (click)="changeProject(true)" class="nav-button">&#9654;</button>
+        </div>
+      }
+    </div>
   </div>
 </div>

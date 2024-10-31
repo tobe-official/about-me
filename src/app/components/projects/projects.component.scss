@@ -1,0 +1,82 @@
+.restOfScreen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 80%;
+  height: 90%;
+  background-color: rgb(0, 0, 0, 0.53);
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.project-display {
+  margin-bottom: 1em;
+  margin-top: 1em;
+  height: 100%;
+  width: 80%;
+  display: flex;
+  align-content: space-around;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.project-image {
+  width: auto;
+  height: 70%;
+  max-width: 100%;
+  object-fit: contain;
+  box-sizing: border-box;
+  margin: 0 auto;
+  border-radius: 20px;
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.project-info {
+  color: white;
+  text-align: center;
+}
+
+.nav-button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.nav-buttons-container {
+  display: none; /* Versteckt die Container für mobile Buttons, falls sie nicht benötigt werden */
+}
+
+/* Mobile Mode */
+@media (max-width: 768px) {
+  .restOfScreen{
+    align-items: start;
+  }
+  .project-container {
+    margin-top: 2em;
+    background-color: rgb(0, 0, 0, 0.53);
+    width: 90%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+  }
+  .nav-button {
+    position: static;
+  }
+
+  .nav-buttons-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1em;
+  }
+}
