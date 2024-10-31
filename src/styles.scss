@@ -11,7 +11,7 @@ html {
     position: relative;
     display: flex;
     align-content: space-between;
-    height: 100vh;
+    min-height: 100vh;
 
     .wholeScreen {
       width: 100vw;
@@ -40,15 +40,6 @@ html {
 
 @media (max-width: 1050px) and (min-width: 451px) {
 
-}
-
-html, body {
-  height: 100%;
-}
-
-body {
-  margin: 0;
-  font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
 html, body {

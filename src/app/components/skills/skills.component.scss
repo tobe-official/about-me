@@ -1,19 +1,20 @@
-html{
-  overflow-y: scroll;
+html {
+  overflow-y: hidden;
   scrollbar-width: none;
 }
 
 .restOfScreen {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
 
-  h1{
-    color: black;
+  h1 {
+    color: white;
     font-size: 35px;
   }
-  .skills-div{
+
+  .skills-div {
     height: 70%;
     width: 100%;
     display: flex;
@@ -21,28 +22,29 @@ html{
     align-items: center;
     flex-direction: column;
 
-    h2{
-      color: black;
+    h2 {
+      color: white;
+      width: 80%;
       font-size: 30px;
       text-align: center;
     }
 
-    .allSkills{
+    .allSkills {
       height: 80%;
       width: 80%;
       display: flex;
-      justify-content: space-around;
+      justify-content: center;
       align-content: flex-start;
       flex-wrap: wrap;
 
-      a{
+      a {
         margin: 1vh 1vh;
-        height: 15rem;
-        width: 15rem;
+        height: 10rem;
+        width: 12rem;
         border-radius: 12px;
         text-decoration: none;
 
-        .skill{
+        .skill {
           color: white;
           font-size: 25px;
           border-radius: 12px;
@@ -59,27 +61,25 @@ html{
     }
   }
 }
+
 @media (max-width: 600px) and (min-width: 200px) {
-  h1{
-    color: white!important;
+  h2 {
+    font-size: 20px !important;
   }
-  h2{
-    font-size: 20px!important;
-    text-align: center;
-    color: white!important;
-  }
-  .allSkills{
+
+  .allSkills {
     width: 90%;
     text-align: center;
   }
-  a{
-    height: 5rem!important;
-    width: 8rem!important;
+
+  a {
+    height: 6rem !important;
+    width: 8rem !important;
     text-align: center;
 
-    .skill{
+    .skill {
       color: white;
-      font-size: 17px!important;
+      font-size: 17px !important;
     }
   }
 }
