@@ -43,6 +43,18 @@
     }
 
     .background-image{
+      min-height: 120%!important;
+    }
+  }
+}
+:host(.background){
+  @media (max-width: 649px) and (min-width: 200px) {
+    .circle-div {
+      width: 100px;
+      height: 100px;
+    }
+
+    .background-image{
       min-height: 100%!important;
     }
   }
