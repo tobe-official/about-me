@@ -4,6 +4,7 @@ import { FooterComponent } from "../global/footer/footer.component";
 import { HeaderComponent } from "../global/header/header.component";
 import { Project } from "../../models/projectModel";
 import { NgClass } from "@angular/common";
+import {TranslateModule} from "@ngx-translate/core";
 
 @Component({
   selector: 'app-projects',
@@ -12,22 +13,40 @@ import { NgClass } from "@angular/common";
     BackgroundComponent,
     FooterComponent,
     HeaderComponent,
-    NgClass
+    NgClass,
+    TranslateModule
   ],
   templateUrl: './projects.component.html',
   styleUrls: ['./projects.component.scss']
 })
 export class ProjectsComponent {
   projects: Project[] = [
-    { title: 'BonApp', description: 'The social Media of the future, where you can find your perfect meal', imageUrl: 'assets/BonAppLogo.webp' },
-    { title: 'About Me Site', description: 'A personal portfolio of myself, to show my skills', imageUrl: 'assets/portfolio.webp' },
-    { title: 'Taper Monkey', description: 'The best and easiest way to learn the typing system and make levels for other users to enjoy it to', imageUrl: 'assets/taperMonkeyMacPicture.webp' },
-    { title: 'Your Project', description: "I would be glad to work for your Project. Contact me now and let's discuss our first project", imageUrl: 'assets/project.webp' },
+    {
+      title: 'BonApp',
+      description: 'project.bonapp.description',
+      imageUrl: 'assets/BonAppLogo.webp'
+    },
+    {
+      title: 'About Me Site',
+      description: 'project.about_me_site.description',
+      imageUrl: 'assets/portfolio.webp'
+    },
+    {
+      title: 'Taper Monkey',
+      description: 'project.taper_monkey.description',
+      imageUrl: 'assets/taperMonkeyMacPicture.webp'
+    },
+    {
+      title: 'Your Project',
+      description: 'project.your_project.description',
+      imageUrl: 'assets/project.webp'
+    }
   ];
+
 
   currentIndex = 0;
   transitionClass = '';
-  isMobile = window.innerWidth <= 768; // initialer Wert basierend auf der aktuellen Fensterbreite
+  isMobile = window.innerWidth <= 790; // initialer Wert basierend auf der aktuellen Fensterbreite
 
   constructor() {
     this.checkMobileView(); // Initiale Überprüfung bei der Komponentenerstellung
@@ -39,7 +58,7 @@ export class ProjectsComponent {
   }
 
   private checkMobileView() {
-    this.isMobile = window.innerWidth <= 768;
+    this.isMobile = window.innerWidth <= 790;
   }
 
   changeProject(next: boolean) {
@@ -49,6 +68,6 @@ export class ProjectsComponent {
     setTimeout(() => {
       this.currentIndex = (this.currentIndex + (next ? 1 : -1) + this.projects.length) % this.projects.length;
       this.transitionClass = 'active';
-    }); // Wartezeit für die Swipe-Animation
+    });
   }
 }

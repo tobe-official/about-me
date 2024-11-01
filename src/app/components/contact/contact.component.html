@@ -7,11 +7,11 @@
       <form (ngSubmit)="sendEmail($event)" #contactForm="ngForm">
         <div class="form-control-div">
           <mat-form-field>
-            <mat-label>Enter your Name</mat-label>
+            <mat-label>{{ 'form.name_label' | translate }}</mat-label>
             <input
               matInput
               [formControl]="nameOfCustomer"
-              placeholder="Example Name"
+              placeholder="{{ 'form.name_placeholder' | translate }}"
               type="text"
               required
             />
@@ -20,13 +20,13 @@
 
         <div class="form-control-div">
           <mat-form-field>
-            <mat-label>Enter your email</mat-label>
+            <mat-label>{{ 'form.email_label' | translate }}</mat-label>
             <input
               matInput
               [formControl]="emailOfCustomer"
               type="email"
               pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
-              placeholder="example@example.com"
+              placeholder="{{ 'form.email_placeholder' | translate }}"
               required
             />
           </mat-form-field>
@@ -34,19 +34,25 @@
 
         <div class="textAreaDiv">
           <mat-form-field>
-            <mat-label>Your Text</mat-label>
-            <textarea matInput placeholder="{{ 'placeHolder' | translate }}" required type="email"
-                      [formControl]="textOfCustomer" class="textarea"></textarea>
+            <mat-label>{{ 'form.message_label' | translate }}</mat-label>
+            <textarea
+              matInput
+              placeholder="{{ 'form.message_placeholder' | translate }}"
+              required
+              type="text"
+              [formControl]="textOfCustomer"
+              class="textarea"
+            ></textarea>
           </mat-form-field>
         </div>
         <div class="buttonDiv">
-          <button mat-flat-button type="submit" class="button">Send</button>
+          <button mat-flat-button type="submit" class="button">{{ 'form.send_button' | translate }}</button>
         </div>
       </form>
     </div>
 
     <div class="imageDiv">
-      <img id="talking" src="../../../assets/contactPicture.webp" alt="Picture of people wanting to talk">
+      <img id="talking" src="../../../assets/contactPicture.webp" alt="{{ 'form.image_alt' | translate }}">
     </div>
   </div>
 </div>

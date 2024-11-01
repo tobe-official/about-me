@@ -3,6 +3,7 @@ import {BackgroundComponent} from "../global/background/background.component";
 import {FooterComponent} from "../global/footer/footer.component";
 import {HeaderComponent} from "../global/header/header.component";
 import {skillsModel} from "../../models/skillsModel";
+import {TranslateModule} from "@ngx-translate/core";
 
 @Component({
   selector: 'app-skills',
@@ -10,7 +11,8 @@ import {skillsModel} from "../../models/skillsModel";
   imports: [
     BackgroundComponent,
     FooterComponent,
-    HeaderComponent
+    HeaderComponent,
+    TranslateModule
   ],
   templateUrl: './skills.component.html',
   styleUrl: './skills.component.scss'

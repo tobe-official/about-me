@@ -3,14 +3,14 @@
 <div class="wholeScreen">
   <app-header></app-header>
   <div class="restOfScreen">
-    <h1>My Skills</h1>
+    <h1>{{ 'skills1.title' | translate }}</h1>
     <div class="skills-div">
-      <h2>Over the time in my apprenticeship I had the chance to get knowledge in the following points:</h2>
+      <h2>{{ 'skills1.subtitle' | translate }}</h2>
       <div class="allSkills">
         @for (currentSkill of skillsList; track $index){
           <a href="{{currentSkill.linkToSite}}" target="_blank">
             <div class="skill">
-              <h4>{{currentSkill.skill}}</h4>
+              <h4>{{ currentSkill.skill }}</h4>
             </div>
           </a>
         }

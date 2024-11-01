@@ -6,8 +6,8 @@
   "contact1": "Kontakt",
   "job": "Informatiker",
   "firstOfAboutMe": "Hallo, mein Name ist Raphaël Schreiber und ich mache eine Lehre als Informatiker bei der SBB.",
-  "secondOfAboutMe": "Ich mag es an Frontend-Projekte zu arbeiten. Ich programmiere auch Fullstack-Projekte. Ich habe besonders UX- und UI-Design gerne.",
-  "thirdOfAboutMe": "Ich arbeite aktuell in einem mobile development team.",
+  "secondOfAboutMe": "Ich mag es, an Frontend-Projekten zu arbeiten, und entwickle auch Fullstack-Projekte. Besonders gerne beschäftige ich mich mit UX- und UI-Design.",
+  "thirdOfAboutMe": "Ich arbeite aktuell in einem Mobile-Development-Team.",
   "impressum": "Impressum",
   "contact": {
     "name": "Raphaël Schreiber",
@@ -27,8 +27,8 @@
       "content": "Beim Zugriff auf unsere Webseite werden automatisch allgemeine Informationen (sog. Server-Logfiles) erfasst. Diese beinhalten u.a. den von Ihnen verwendeten Webbrowser sowie Ihr Betriebssystem und Ihren Internet Service Provider. Diese Daten lassen keinerlei Rückschlüsse auf Ihre Person zu und werden von uns statistisch ausgewertet, um unseren Internetauftritt technisch und inhaltlich zu verbessern. Das Erfassen dieser Informationen ist notwendig, um den Inhalt der Webseite korrekt ausliefern zu können."
     },
     "privacy_2": "Die Nutzung der Webseite ist grundsätzlich ohne Angabe personenbezogener Daten möglich. Soweit personenbezogene Daten (beispielsweise Name, Anschrift oder E-Mail-Adressen) erhoben werden, erfolgt dies, soweit möglich, stets auf freiwilliger Basis. Diese Daten werden ohne Ihre ausdrückliche Zustimmung nicht an Dritte weitergegeben.",
-    "privacy_3": "Sofern ein Vertragsverhältnis begründet, inhaltlich ausgestaltet oder geändert werden soll oder Sie an uns eine Anfrage stellen, erheben und verwenden wir personenbezogene Daten von Ihnen, soweit dies zu diesem Zwecke erforderlich ist (Bestandsdaten). Wir erheben, verarbeiten und nutzen personenbezogene Daten soweit dies erforderlich ist, um Ihnen die Inanspruchnahme des Webangebots zu ermöglichen (Nutzungsdaten).",
-    "privacy_4": "Sämtliche personenbezogenen Daten werden nur solange gespeichert wie dies für den genannten Zweck (Bearbeitung Ihrer Anfrage oder Abwicklung eines Vertrags) erforderlich ist. Hierbei werden steuer- und handelsrechtliche Aufbewahrungsfristen von uns berücksichtigt.",
+    "privacy_3": "Sofern ein Vertragsverhältnis begründet, inhaltlich ausgestaltet oder geändert werden soll oder Sie an uns eine Anfrage stellen, erheben und verwenden wir personenbezogene Daten von Ihnen, soweit dies zu diesem Zwecke erforderlich ist (Bestandsdaten). Wir erheben, verarbeiten und nutzen personenbezogene Daten, soweit dies erforderlich ist, um Ihnen die Inanspruchnahme des Webangebots zu ermöglichen (Nutzungsdaten).",
+    "privacy_4": "Sämtliche personenbezogenen Daten werden nur solange gespeichert, wie dies für den genannten Zweck (Bearbeitung Ihrer Anfrage oder Abwicklung eines Vertrags) erforderlich ist. Hierbei werden steuer- und handelsrechtliche Aufbewahrungsfristen von uns berücksichtigt.",
     "privacy_5": "Auf Anordnung der zuständigen Stellen müssen wir im Einzelfall Auskunft über diese Daten (Bestandsdaten) erteilen, soweit dies für Zwecke der Strafverfolgung, zur Gefahrenabwehr, zur Erfüllung der gesetzlichen Aufgaben der Verfassungsschutzbehörden oder des Militärischen Abschirmdienstes oder zur Durchsetzung der Rechte am geistigen Eigentum erforderlich ist."
   },
   "liability": {
@@ -46,5 +46,33 @@
     "title": "3. Urheberrecht",
     "content": "Die durch die Diensteanbieter, deren Mitarbeiter und beauftragte Dritte erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der vorherigen schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers. Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet. Soweit die Inhalte auf dieser Seite nicht vom Betreiber erstellt wurden, werden die Urheberrechte Dritter beachtet. Insbesondere werden Inhalte Dritter als solche gekennzeichnet. Sollten Sie trotzdem auf eine Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen werden derartige Inhalte umgehend entfernt."
   },
-  "generated": "Dieses Impressum wurde mit Hilfe des Impressum-Generators von HENSCHE Rechtsanwälte, Kanzlei für Arbeitsrecht erstellt."
+  "generated": "Dieses Impressum wurde mit Hilfe des Impressum-Generators von HENSCHE Rechtsanwälte, Kanzlei für Arbeitsrecht erstellt.",
+  "project": {
+    "bonapp": {
+      "description": "BonApp ist das soziale Netzwerk der Zukunft, speziell für Feinschmecker. Entdecken und teilen Sie kulinarische Erlebnisse, erkunden Sie neue Küchen und finden Sie das perfekte Gericht, das zu Ihrem Geschmack und Ihren Ernährungsbedürfnissen passt."
+    },
+    "about_me_site": {
+      "description": "Diese Portfolio-Website zeigt meine persönlichen Projekte, Fähigkeiten und berufliche Laufbahn. Erfahren Sie mehr über mein Fachwissen, meinen Hintergrund und die Dienstleistungen, die ich anbiete, um Ihre Ideen zu verwirklichen."
+    },
+    "taper_monkey": {
+      "description": "Taper Monkey ist eine unterhaltsame und interaktive Möglichkeit, das Tippen zu lernen. Üben Sie mit spannenden Levels oder erstellen Sie neue Herausforderungen, an denen andere teilnehmen und ihre Tippfähigkeiten verbessern können."
+    },
+    "your_project": {
+      "description": "Ich würde mich freuen, an Ihrem Projekt zu arbeiten. Kontaktieren Sie mich, um Ihre Ideen zu besprechen, und lassen Sie uns gemeinsam daran arbeiten!"
+    }
+  },
+  "skills1": {
+    "title": "Meine Fähigkeiten",
+    "subtitle": "Während meiner Ausbildung hatte ich die Möglichkeit, Wissen in den folgenden Bereichen zu erwerben:"
+  },
+  "form": {
+    "name_label": "Geben Sie Ihren Namen ein",
+    "name_placeholder": "Beispielname",
+    "email_label": "Geben Sie Ihre E-Mail ein",
+    "email_placeholder": "beispiel@beispiel.com",
+    "message_label": "Ihre Nachricht",
+    "message_placeholder": "Hallo Raphaël, können Sie mir helfen, eine Software zu entwickeln für ...",
+    "send_button": "Senden",
+    "image_alt": "Bild von Personen, die sprechen möchten"
+  }
 }

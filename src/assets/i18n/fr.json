@@ -1,30 +1,30 @@
 {
   "home": "Home",
-  "aboutMe": "Sur moi",
-  "projects": "Projet",
+  "aboutMe": "À propos de moi",
+  "projects": "Projets",
   "skills": "Compétences",
   "contact1": "Contact",
-  "job": "Developeur",
-  "firstOfAboutMe": "Bonjour, je m'appelle Raphaël Schreiber et je fais un apprentissage aux CFF en tant que développeur de software.",
-  "secondOfAboutMe": "J'aime travailler sur des projets Frontend mais je peux aussi programmer une application Fullstack. J'aime particulièrement l'UX-Design, l'UI-Design, et l'ensemble du Frontend.",
+  "job": "Développeur",
+  "firstOfAboutMe": "Bonjour, je m'appelle Raphaël Schreiber et je suis en apprentissage aux CFF en tant que développeur de logiciels.",
+  "secondOfAboutMe": "J'aime travailler sur des projets Frontend, mais je peux également développer des applications Fullstack. Je suis particulièrement passionné par le design UX, le design UI, et tout l'univers du Frontend.",
   "thirdOfAboutMe": "Je travaille actuellement dans une équipe de développement mobile.",
   "impressum": "Mentions légales",
   "contact": {
     "name": "Raphaël Schreiber",
     "address": "Lorrainestrasse 1",
-    "zip": "3014 Bern",
+    "zip": "3014 Berne",
     "phone": "Tél: +41 79 214 53 57",
     "email": "rsc146273@stud.gibb.ch"
   },
   "disclaimer": {
-    "title": "Avertissement - mentions légales",
+    "title": "Avertissement - Mentions légales",
     "inquiry_right": {
       "title": "Droit à l'information et retrait",
       "content": "Vous avez le droit de demander des informations sur les données collectées vous concernant à tout moment, gratuitement et sans délai. Vous pouvez également retirer votre consentement à l'utilisation de vos données personnelles avec effet pour l'avenir. Pour ce faire, veuillez contacter le prestataire de services mentionné dans les mentions légales."
     },
     "privacy": {
       "title": "Protection des données (général)",
-      "content": "Lors de l'accès à notre site web, des informations générales (appelées fichiers journaux du serveur) sont automatiquement collectées. Cela inclut le navigateur Web que vous utilisez, votre système d'exploitation et votre fournisseur de services Internet. Ces données ne permettent aucune conclusion sur votre personne et sont statistiquement évaluées par nos soins afin d'améliorer notre présence sur Internet d'un point de vue technique et de contenu. La collecte de ces informations est nécessaire pour délivrer correctement le contenu du site Web."
+      "content": "Lors de l'accès à notre site Web, des informations générales (appelées fichiers journaux du serveur) sont automatiquement collectées. Cela inclut le navigateur Web que vous utilisez, votre système d'exploitation et votre fournisseur de services Internet. Ces données ne permettent aucune conclusion sur votre personne et sont évaluées statistiquement par nos soins afin d'améliorer notre présence sur Internet d'un point de vue technique et de contenu. La collecte de ces informations est nécessaire pour délivrer correctement le contenu du site Web."
     },
     "privacy_2": "L'utilisation du site Web est généralement possible sans fournir de données personnelles. Dans la mesure où des données personnelles (par exemple, nom, adresse ou adresses e-mail) sont collectées, cela se fait, autant que possible, sur une base volontaire. Ces données ne seront pas transmises à des tiers sans votre consentement explicite.",
     "privacy_3": "Si une relation contractuelle doit être établie, structurée ou modifiée, ou si vous nous envoyez une demande, nous collecterons et utiliserons des données personnelles vous concernant dans la mesure nécessaire à cette fin (données d'inventaire). Nous collectons, traitons et utilisons des données personnelles dans la mesure où cela est nécessaire pour vous permettre d'utiliser l'offre Web (données d'utilisation).",
@@ -35,7 +35,7 @@
     "title": "Avertissement (Responsabilité)",
     "liability_content1": {
       "title": "1. Responsabilité pour les contenus",
-      "content": "En tant que prestataire de services, nous sommes responsables de nos propres contenus sur ces pages conformément aux lois générales en vertu de l'article 7, paragraphe 1 de la TMG. Cependant, selon les articles 8 à 10 de la TMG, nous ne sommes pas tenus en tant que prestataire de services de surveiller les informations transmises ou stockées par des tiers ou de rechercher des circonstances qui indiqueraient une activité illégale. Les obligations de suppression ou de blocage de l'utilisation des informations conformément aux lois générales restent inchangées par ceci. La responsabilité à cet égard n'est possible qu'à partir du moment de la connaissance d'une violation spécifique de la loi. Dès que nous prendrons connaissance de telles violations de la loi, nous retirerons immédiatement ces contenus."
+      "content": "En tant que prestataire de services, nous sommes responsables de nos propres contenus sur ces pages conformément aux lois générales, en vertu de l'article 7, paragraphe 1 de la TMG. Cependant, selon les articles 8 à 10 de la TMG, nous ne sommes pas tenus en tant que prestataire de services de surveiller les informations transmises ou stockées par des tiers ou de rechercher des circonstances qui indiqueraient une activité illégale. Les obligations de suppression ou de blocage de l'utilisation des informations conformément aux lois générales restent inchangées par ceci. La responsabilité à cet égard n'est possible qu'à partir du moment de la connaissance d'une violation spécifique de la loi. Dès que nous prendrons connaissance de telles violations de la loi, nous retirerons immédiatement ces contenus."
     },
     "liability_content2": {
       "title": "2. Responsabilité pour les liens",
@@ -46,6 +46,33 @@
     "title": "3. Droit d'auteur",
     "content": "Les contenus et œuvres créés par les prestataires de services, leurs employés et des tiers mandatés sur ces pages sont soumis à la législation allemande sur le droit d'auteur. La reproduction, la modification, la distribution et toute utilisation en dehors des limites du droit d'auteur nécessitent le consentement écrit préalable de l'auteur ou du créateur respectif. Les téléchargements et copies de ces pages ne sont autorisés que pour un usage privé et non commercial. Dans la mesure où les contenus de ce site n'ont pas été créés par l'opérateur, les droits d'auteur des tiers sont respectés. En particulier, les contenus de tiers sont marqués comme tels. Si vous avez connaissance d'une violation du droit d'auteur, veuillez nous en informer. Dès que nous prendrons connaissance de violations de la loi, nous retirerons immédiatement ces contenus."
   },
-  "generated": "Ces mentions légales ont été créées avec l'aide du générateur de mentions légales de HENSCHE Rechtsanwälte, cabinet d'avocats spécialisé en droit du travail."
+  "generated": "Ces mentions légales ont été créées avec l'aide du générateur de mentions légales de HENSCHE Rechtsanwälte, cabinet d'avocats spécialisé en droit du travail.",
+  "project": {
+    "bonapp": {
+      "description": "BonApp est le réseau social du futur, conçu spécialement pour les amateurs de bonne cuisine. Découvrez et partagez des expériences culinaires, explorez de nouvelles cuisines et trouvez le repas parfait qui correspond à vos goûts et préférences alimentaires."
+    },
+    "about_me_site": {
+      "description": "Ce site portfolio présente mes projets personnels, compétences et parcours professionnel. Apprenez-en davantage sur mon expertise, mon expérience et les services que je propose pour donner vie à vos idées."
+    },
+    "taper_monkey": {
+      "description": "Taper Monkey est une manière amusante et interactive d’apprendre la frappe au clavier. Entraînez-vous avec des niveaux captivants ou créez de nouveaux défis pour que les autres puissent s’améliorer en tapant."
+    },
+    "your_project": {
+      "description": "Je serais ravi de travailler sur votre projet. Contactez-moi pour discuter de vos idées et travaillons ensemble pour les réaliser!"
+    }
+  },
+  "skills1": {
+    "title": "Mes Compétences",
+    "subtitle": "Au cours de mon apprentissage, j'ai eu l'occasion d'acquérir des connaissances dans les domaines suivants :"
+  },
+  "form": {
+    "name_label": "Entrez votre nom",
+    "name_placeholder": "Nom Exemple",
+    "email_label": "Entrez votre email",
+    "email_placeholder": "exemple@exemple.com",
+    "message_label": "Votre Message",
+    "message_placeholder": "Bonjour Raphaël, pouvez-vous m'aider à créer un logiciel pour ...",
+    "send_button": "Envoyer",
+    "image_alt": "Image de personnes souhaitant discuter"
+  }
 }
-
